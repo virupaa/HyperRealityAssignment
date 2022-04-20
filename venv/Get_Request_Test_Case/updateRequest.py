@@ -1,0 +1,22 @@
+import requests
+import json
+import jsonpath
+
+#API URL
+url = "http://127.0.0.1:5000/post_update/1/"
+
+file = open('putBody.json','r')
+
+json_input = file.read()
+
+# Convert string to json
+request_json = json.loads(json_input)
+print("REQUEST",request_json)
+
+#Make post with json input
+respose = requests.put(url,request_json)
+print("RESPONSE",respose)
+
+print(respose.content)
+
+assert respose.status_code == 200
