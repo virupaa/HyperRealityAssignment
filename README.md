@@ -5,19 +5,19 @@ Schema is defined with marshmallow and marshmallow-sqlalchemy.
 
 **Model Fields**
 
-****Id: Integer
+**Id: Integer**
 
-****Checked: Boolean
+**Checked: Boolean**
 
-****Name: String
+**Name: String**
 
-****Type : String
+**Type : String**
 
-****Age: Number
+**Age: Number**
 
-****Description: String
+**Description: String**
 
-****Date: Datetime
+**Date: Datetime**
 
 **Performed all the CRUD operations like:
 GET
